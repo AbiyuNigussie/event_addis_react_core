@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "event_addis_react_core.Server", "event_addis_react_core.Server\event_addis_react_core.Server.csproj", "{26F067F0-1C98-4252-940F-023D66B2DC2F}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "event_addis_react_core.client", "event_addis_react_core.client\event_addis_react_core.client.esproj", "{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26F067F0-1C98-4252-940F-023D66B2DC2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F067F0-1C98-4252-940F-023D66B2DC2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F067F0-1C98-4252-940F-023D66B2DC2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F067F0-1C98-4252-940F-023D66B2DC2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FED804B-A8ED-4481-A3D0-7B2CE81F44D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CDF787E-2B4F-42A5-AA04-FFBAD948EAEB}
+	EndGlobalSection
+EndGlobal
