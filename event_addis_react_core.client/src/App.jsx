@@ -9,6 +9,8 @@ import HomePage from "./pages/Home/HomePage";
 import UserContext from "./contexts/UserContext";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SignUpPage from "./pages/SignupPage/SignupPage";
+import FindEventsPage from "./pages/EventsPage/FindEventsPage";
+import CreateEventPage from "./pages/EventsPage/CreateEventPage";
 
 const App = () => {
   const [forecasts, setForecasts] = useState();
@@ -50,11 +52,11 @@ const App = () => {
         <Route path="/user/signup" element={<SignUpPage />} />
         <Route path="/user/login" element={<LoginPage />} />
         {/* <Route path="/user/verify/:token" element={<Verification />} /> */}
-        {/* <Route
+        <Route
           path="/events"
           element={
             <Layout>
-              <EventsPage />
+              <FindEventsPage />
             </Layout>
           }
         />
@@ -65,7 +67,7 @@ const App = () => {
               <CreateEventPage />
             </Layout>
           }
-        /> */}
+        />
       </Routes>
     </div>
   );

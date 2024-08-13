@@ -12,7 +12,7 @@ const Footer = () => {
         </button>
       </div>
 
-      <p className="text-white">&copy; 2023 event-addis</p>
+      <p className="text-white">&copy; 2024 event-addis</p>
     </div>
   );
 };
