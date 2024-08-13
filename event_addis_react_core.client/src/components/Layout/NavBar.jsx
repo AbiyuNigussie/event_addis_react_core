@@ -1,5 +1,11 @@
 import React, { Fragment, useContext, useState, useEffect } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import {
+  Disclosure,
+  Menu,
+  MenuButton,
+  MenuItem,
+  Transition,
+} from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Navigate } from "react-router-dom";
 import UserContext from "../../contexts/UserContext";
@@ -79,7 +85,7 @@ const NavBar = () => {
               {isAuthenticated ? (
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <img
@@ -87,7 +93,7 @@ const NavBar = () => {
                         src={userProfile.profilePictureUrl}
                         alt=""
                       />
-                    </Menu.Button>
+                    </MenuButton>
                   </div>
                   <Transition
                     as={Fragment}
@@ -98,8 +104,8 @@ const NavBar = () => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
+                    <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <MenuItem>
                         {({ active }) => (
                           <Link
                             to={`/user-profile/${userId}`}
@@ -111,8 +117,8 @@ const NavBar = () => {
                             Your Profile
                           </Link>
                         )}
-                      </Menu.Item>
-                      <Menu.Item>
+                      </MenuItem>
+                      <MenuItem>
                         {({ active }) => (
                           <a
                             href="#"
@@ -124,8 +130,8 @@ const NavBar = () => {
                             Settings
                           </a>
                         )}
-                      </Menu.Item>
-                      <Menu.Item>
+                      </MenuItem>
+                      <MenuItem>
                         {({ active }) => (
                           <a
                             href="#"
@@ -138,8 +144,8 @@ const NavBar = () => {
                             Sign out
                           </a>
                         )}
-                      </Menu.Item>
-                    </Menu.Items>
+                      </MenuItem>
+                    </MenuItems>
                   </Transition>
                 </Menu>
               ) : (

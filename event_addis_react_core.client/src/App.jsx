@@ -7,6 +7,8 @@ import Layout from "./components/Layout/Layout";
 import NavBar from "./components/Layout/NavBar";
 import HomePage from "./pages/Home/HomePage";
 import UserContext from "./contexts/UserContext";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import SignUpPage from "./pages/SignupPage/SignupPage";
 
 const App = () => {
   const [forecasts, setForecasts] = useState();
@@ -33,7 +35,7 @@ const App = () => {
             </Layout>
           }
         />
-        {/* <Route
+        <Route
           path="/user-profile/:userId"
           element={
             isAuthenticated ? (
@@ -47,8 +49,8 @@ const App = () => {
         />
         <Route path="/user/signup" element={<SignUpPage />} />
         <Route path="/user/login" element={<LoginPage />} />
-        <Route path="/user/verify/:token" element={<Verification />} />
-        <Route
+        {/* <Route path="/user/verify/:token" element={<Verification />} /> */}
+        {/* <Route
           path="/events"
           element={
             <Layout>
