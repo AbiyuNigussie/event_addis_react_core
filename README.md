@@ -142,4 +142,4 @@ Contribution are welcome! Please follow these steps:
 For any inquiries or issues, please reach out to:
 
 Abiyu Nigussie - Fullstack Developer
-<br><a href="abiyunigussie7@gmail.com">Email</a> | <a href="">Linkden</a>
+<br>abiyunigussie7@gmail.com | <a href="https://www.linkedin.com/in/abiyu-nigussie-531381260">Linkden</a>
